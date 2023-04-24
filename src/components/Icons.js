@@ -435,8 +435,7 @@ export const CircularText = ({ className, ...rest }) => (
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
-<g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+<g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)" stroke="none">
 <path d="M6355 9979 c-2 -8 -49 -212 -104 -454 -55 -242 -114 -500 -130 -574
 -17 -73 -31 -141 -31 -150 0 -14 17 -21 73 -33 39 -9 73 -15 74 -14 4 3 273
 1186 273 1197 0 4 -24 12 -52 19 -29 6 -63 13 -75 16 -14 4 -25 1 -28 -7z"/>

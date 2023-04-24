@@ -15,11 +15,16 @@ export default function Home() {
         <title>Ancoor Banerjee Portfolio built with Nextjs</title>
         <meta name="description" content="Explore Ancoor's Next.js developer portfolio and  discover the latest webapp projects and software engineering articles.  Showcase your skills as a full-stack developer and software engineer." />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2 ">
-              <Image src={profilePic} alt="Ancoor" className="w-full h-auto" />
+              <Image src={profilePic} alt="Ancoor" className="w-full h-auto"
+              priority
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText
@@ -36,13 +41,15 @@ export default function Home() {
                 <Link
                   href="/dummy.pdf"
                   target="_blank"
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2
+                  dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
+                  "
                   download={true}
                 >
                   Resume <LinkArrow className={"w-6 ml-1 "} />
                 </Link>
                 <Link href="mailto:ancoorbanerjee7@gmail.com" target="_blank"
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
+                className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light"
                 >
                   Contact
                 </Link>
