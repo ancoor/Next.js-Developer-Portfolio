@@ -44,7 +44,7 @@ const Details = ({ type, time, place, info }) => {
         <h3 className="capitalize font-bold text-2xl">
           {type}&nbsp;
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {place}
         </span>
         <p className="font-medium w-full">{info}</p>
@@ -64,7 +64,7 @@ const Education = () => {
         Education
       </h2>
       <div className="w-[75%] mx-auto relative">
-        <motion.div className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top" ref={ref} style={{scaleY: scrollYProgress}} />
+        <motion.div className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light" ref={ref} style={{scaleY: scrollYProgress}} />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           {
             educationData.map((singleData, index) => {
