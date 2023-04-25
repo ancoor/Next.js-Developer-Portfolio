@@ -8,6 +8,7 @@ import articleImage from "../../public/images/articles/pagination component in r
 import articleImage2 from "../../public/images/articles/create loading screen in react js.jpg";
 import articleImage3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const featuredArticlesData = [
   {
@@ -152,6 +153,7 @@ const articles = () => {
           content="Browse through Ancoor's collection of software engineering articles and tutorials on Next.js, React.js, web development, and more.  Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio."
         />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
