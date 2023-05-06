@@ -11,14 +11,14 @@ const Footer = () => {
           Build with <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>{" "}
           by&nbsp;
           <Link
-            href=""
+            href="https://ancoor-portfolio.netlify.app/"
             className="underline underline-offset-2"
             target="_blank"
           >
             Ancoor
           </Link>
         </div>
-        <Link href="" className="underline underline-offset-2" target="_blank">
+        <Link href="whatsapp://send?phone=917773845893&text=Hello, I visited your profile ❤️." className="underline underline-offset-2" target="_blank">
           Say Hello
         </Link>
       </Layout>
