@@ -30,7 +30,7 @@ const projectsData = [
     image:
       "http://res.cloudinary.com/dxf99yycj/image/upload/v1665858978/d1lwlyecuozl0h3vnpzt.png",
     deployed_url: "https://ancoor-portfolio.netlify.app/",
-    github_url: "",
+    github_url: "https://github.com/ancoor/portfolio",
     category: ["javascript", "node", "react", "mongodb"],
     created_at: "2022-10-08T19:43:13.567Z",
     updated_at: "2022-10-15T18:36:19.201Z",
