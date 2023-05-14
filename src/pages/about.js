@@ -65,7 +65,7 @@ const about = () => {
                 intuitive, enjoyable experiences for users.
               </p>
               <p className="font-medium">
-                - Whether I'm working on a website, mobile app, or other digital
+                - Whether I'm working on a website or other digital
                 product, I bring my commitment to design excellence and
                 user-centered thinking to every project I work on. I look
                 forward to the opportunity to bring my skills and passion to
