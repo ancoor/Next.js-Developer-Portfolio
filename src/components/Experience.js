@@ -13,7 +13,7 @@ const experienceData = [
   {
     postion: "Software Developer",
     company: "Collabera",
-    time: "Movember 2021 - February 2023",
+    time: "November 2021 - February 2023",
     address: "Remote, India",
     work: "Developed automated unit test cases and implemented a microservices-based architecture in Node.js to deliver eﬃcient RestFul APIs for Infosys Client.",
   },
@@ -34,16 +34,18 @@ const experienceData = [
   },
 ];
 
-
 const Details = ({ postion, company, companyLink, time, address, work }) => {
-  const ref = useRef(null)
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first: mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+    <li
+      ref={ref}
+      className="my-8 first: mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]"
+    >
       <LiIcons reference={ref} />
       <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration: 0.5, type: "spring"}}
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {postion}&nbsp;
@@ -67,7 +69,7 @@ const Experience = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"]
+    offset: ["start end", "center start"],
   });
   return (
     <div className="my-64 md:mt-32">
@@ -75,12 +77,16 @@ const Experience = () => {
         Experience
       </h2>
       <div className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
-        <motion.div className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]" ref={ref} style={{scaleY: scrollYProgress}} />
+        <motion.div
+          className="absolute left-9 top-1 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:left-[30px] xs:left-[20px]"
+          ref={ref}
+          style={{ scaleY: scrollYProgress }}
+        />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-          {
-            experienceData.map((companyData, index) => {
-              return <Details
-              key={companyData.company + "-" + index}
+          {experienceData.map((companyData, index) => {
+            return (
+              <Details
+                key={companyData.company + "-" + index}
                 postion={companyData.postion}
                 company={companyData.company}
                 companyLink={companyData.companyLink}
@@ -88,8 +94,8 @@ const Experience = () => {
                 address={companyData.address}
                 work={companyData.work}
               />
-            })
-          }
+            );
+          })}
         </ul>
       </div>
     </div>
